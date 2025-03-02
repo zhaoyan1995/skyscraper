@@ -12,7 +12,6 @@
 
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 int		check_solution(int *overview, int *input);
 void	put_overview(int **tab, int **overview);
