@@ -6,7 +6,7 @@
 /*   By: yanzhao <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 15:27:49 by yanzhao           #+#    #+#             */
-/*   Updated: 2025/03/02 23:22:30 by ZHAOYAN          ###   ########.fr       */
+/*   Updated: 2025/03/02 23:53:39 by ZHAOYAN          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	put_overview(int **tab, int **overview)
 	int	j;
 
 	*overview = (int *)malloc(sizeof(int) * 16);
-	if (overview == NULL)
+	if (overview == NULL || tab == NULL)
 		return ;
 	i = 0;
 	j = 0;
