@@ -6,7 +6,7 @@
 /*   By: yanzhao <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 18:48:25 by yanzhao           #+#    #+#             */
-/*   Updated: 2025/01/26 23:16:39 by yanzhao          ###   ########.fr       */
+/*   Updated: 2025/03/02 23:25:37 by ZHAOYAN          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,33 +68,8 @@ int	*generate_input(int nb_digit, char *str)
 		else
 		{
 			write(2, "Error\n", 6);
-			return (NULL) ;
+			return (NULL);
 		}
 	}
 	return (input);
 }
-
-/*int	main(int argc, char **argv)
-{
-	int	*input;
-	int	nb_digit;
-	int	len_argv;
-
-	if (argc != 2)
-		write(2, "Error\n", 6);
-	else
-	{
-		nb_digit = 0;
-		len_argv = ft_strlen(argv[1]);
-		nb_digit = count_digit_argv(len_argv, argv[1]);
-		if (nb_digit != 16)
-		{
-			write(2, "Error\n", 6);
-			return (1);
-		}
-		input = generate_input(nb_digit, argv[1]);
-		check_solution();
-		free(input);
-	}
-	return (0);
-}*/

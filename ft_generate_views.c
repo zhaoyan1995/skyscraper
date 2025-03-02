@@ -6,7 +6,7 @@
 /*   By: yanzhao <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 15:27:49 by yanzhao           #+#    #+#             */
-/*   Updated: 2025/01/26 22:12:41 by yanzhao          ###   ########.fr       */
+/*   Updated: 2025/03/02 23:24:28 by ZHAOYAN          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,12 @@ int	function(int *tab);
 
 int	*ft_put_view_colup(int **tab, int line, int col)
 {
-	int	*tab3;
-	int	tab2[4];
-	int	x;
-	int	y;
+	static int	tab2[4];
+	static int	tab3[4];
+	int			x;
+	int			y;
 
 	y = 0;
-	tab3 = (int *)malloc(sizeof(int) * 4);
 	if (tab == NULL)
 		return (NULL);
 	while (col < 4)
@@ -39,13 +38,12 @@ int	*ft_put_view_colup(int **tab, int line, int col)
 
 int	*ft_put_view_coldown(int **tab, int line, int col)
 {
-	int	*tab3;
-	int	tab2[4];
-	int	x;
-	int	y;
+	static int	tab2[4];
+	static int	tab3[4];
+	int			x;
+	int			y;
 
 	y = 0;
-	tab3 = (int *)malloc(sizeof(int) * 4);
 	if (tab == NULL)
 		return (NULL);
 	while (col < 4)
@@ -62,13 +60,12 @@ int	*ft_put_view_coldown(int **tab, int line, int col)
 
 int	*ft_put_view_line_left(int **tab, int line, int col)
 {
-	int	*tab3;
-	int	tab2[4];
-	int	x;
-	int	y;
+	static int	tab2[4];
+	static int	tab3[4];
+	int			x;
+	int			y;
 
 	y = 0;
-	tab3 = (int *)malloc(sizeof(int) * 4);
 	if (tab == NULL)
 		return (NULL);
 	while (line < 4)
@@ -85,13 +82,12 @@ int	*ft_put_view_line_left(int **tab, int line, int col)
 
 int	*ft_put_view_line_right(int **tab, int line, int col)
 {
-	int	*tab3;
-	int	tab2[4];
-	int	x;
-	int	y;
+	static int	tab2[4];
+	static int	tab3[4];
+	int			x;
+	int			y;
 
 	y = 0;
-	tab3 = (int *)malloc(sizeof(int) * 4);
 	if (tab == NULL)
 		return (NULL);
 	while (line < 4)

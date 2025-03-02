@@ -6,14 +6,14 @@
 /*   By: yanzhao <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 23:27:51 by yanzhao           #+#    #+#             */
-/*   Updated: 2025/01/26 23:33:44 by yanzhao          ###   ########.fr       */
+/*   Updated: 2025/03/02 20:07:10 by ZHAOYAN          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	check_solution(int *overview, int *input)
 {
 	int	i;
-	
+
 	i = 0;
 	while (i < 16)
 	{
